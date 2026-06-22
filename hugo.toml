@@ -6,7 +6,25 @@ theme = "LoveIt"
 [params]
   version = "0.2.X"
   description = "CTF writeups & security research"
-  author = "fr0st"
+  defaultTheme = "dark"
+
+  [params.author]
+    name = "fr0st"
+    email = ""
+    link = "https://github.com/medexe077"
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      avatarURL = ""
+      title = "fr0st"
+      subtitle = "CTF writeups & security research"
+      typeit = false
+      social = true
+
+  [params.social]
+    GitHub = "medexe077"
 
 [menu]
   [[menu.main]]
