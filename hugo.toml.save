@@ -1,5 +1,5 @@
 baseURL = "https://medexe077.github.io/blog/"
-languageCode = "en-us"
+locale = "en-us"
 title = "fr0st Blog"
 theme = "LoveIt"
 
@@ -21,3 +21,4 @@ theme = "LoveIt"
     name = "About"
     url = "/about/"
     weight = 3
+
