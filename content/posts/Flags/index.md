@@ -1,10 +1,7 @@
 ---
-Flags CTF 30/07 - 01/08 2026
-Chall: "Power Trip"
-Tags: ["Steganography", "Forensics", "Audio Analysis", "SSTV"]
-
----
-
+                                                                  **Power Trip Writeup**
+**Challenge**: "Power Trip"
+**Event**: Flags CTF
 **Category:** Forensics  
 **Difficulty:** Medium - Hard 
 
