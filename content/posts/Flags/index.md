@@ -57,7 +57,7 @@ I ignored it completely because its a classic Forensics challs troll, but let ju
 
 Back to the audio file, the spectrogram revealed a Pastebin link embedded in the frequency domain.
 
-![](patebin.png)
+![Patebin](patebin.png)
 
 ## Step 4 — Password-Protected Pastebin
 For a sec i thought the flag is there, but the Pastebin is password protected, for 2 hours i tried many methods with both the original pic and audio file but nothing worked, 
@@ -65,8 +65,4 @@ Wait a minute... Can the fake flag be the Pastebin's Password? The answer is yes
 
 ![](flag.png)
 
-Flag: ITC{l4y3rs_m4k3_m3_h3ll4_d1zzy!}
-
-
-
-## Flag
+## Flag: ITC{l4y3rs_m4k3_m3_h3ll4_d1zzy!}
