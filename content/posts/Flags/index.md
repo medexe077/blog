@@ -57,7 +57,7 @@ I ignored it completely because its a classic Forensics challs troll, but let ju
 
 Back to the audio file, the spectrogram revealed a Pastebin link embedded in the frequency domain.
 
-![Patebin](patebin.png)
+![Patebin](pastebin.png)
 
 ## Step 4 — Password-Protected Pastebin
 For a sec i thought the flag is there, but the Pastebin is password protected, for 2 hours i tried many methods with both the original pic and audio file but nothing worked, 
