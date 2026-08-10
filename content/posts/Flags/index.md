@@ -1,5 +1,4 @@
 ---
-Title: "Power Trip"
 Challenge: "Power Trip"
 Event: "Flags CTF"
 Category: "Forensics"
