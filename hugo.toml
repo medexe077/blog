@@ -5,12 +5,12 @@ theme = "LoveIt"
 
 [params]
   version = "0.2.X"
-  description = "CTF writeups & security research"
+  description = "My CTF writeups & security research"
   defaultTheme = "dark"
 
   [params.author]
     name = "fr0st"
-    email = ""
+    email = "mohamed_kheddari@etu.univ-blida.dz"
     link = "https://github.com/medexe077"
 
   [params.home]
