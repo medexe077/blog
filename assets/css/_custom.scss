@@ -1,14 +1,14 @@
 /* ===== Frosty Sky-Blue Theme ===== */
 
 body {
-  background-color: #bfe0f5 !important;
-  color: #1b2530 !important;
+  background-color: #538fb5 !important;
+  color: #245182 !important;
 }
 
 /* Header — stays dark */
 #header-desktop,
 #header-mobile {
-  background-color: #141b24 !important;
+  background-color: #245182 !important;
   border-bottom: 1px solid #2e3d4d;
 }
 
@@ -34,7 +34,7 @@ a:hover {
 
 /* Post cards — lighter/white against the sky blue */
 .page.home article.single.summary {
-  background-color: #e8f4fc;
+  background-color: #8fc1e3;
   border: 1px solid #a9cfe8;
   border-radius: 12px;
   padding: 20px 24px;
