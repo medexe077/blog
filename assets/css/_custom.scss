@@ -1,5 +1,4 @@
-.home-page .posts .post-list-item,
-.home-page .posts > article {
+.page.home article.single.summary {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   padding: 20px 24px;
@@ -8,8 +7,7 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.home-page .posts .post-list-item:hover,
-.home-page .posts > article:hover {
+.page.home article.single.summary:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
