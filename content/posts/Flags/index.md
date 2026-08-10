@@ -1,8 +1,8 @@
 ---
 
-**Challenge**: "Power Trip"
+**Challenge:** Power Trip
 
-**Event**: Flags CTF
+**Event:** Flags CTF
 
 **Category:** Forensics  
 
@@ -31,7 +31,7 @@ steghide extract -sf ...
 
 Nothing useful came out. Time to go deeper.
 
-## Step 2 — zsteg
+## Step 2 — Finding the audio file using zsteg
 
 ```bash
 zsteg -a pt.png
