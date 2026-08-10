@@ -1,13 +1,64 @@
+/* ===== Frosty Blue-Gray Theme ===== */
+
+body {
+  background-color: #1b2530 !important;
+  color: #d7e3ec !important;
+}
+
+/* Header */
+.header-desktop,
+.header-mobile {
+  background-color: #1b2530 !important;
+  border-bottom: 1px solid #2e3d4d;
+}
+
+.header-desktop .logo,
+.header-mobile .logo {
+  color: #8fc1e8 !important;
+}
+
+/* Links / accent color */
+a,
+.home-title,
+.menu-item {
+  color: #8fc1e8;
+}
+
+a:hover {
+  color: #b8dcf7;
+}
+
+/* Post cards on homepage */
 .page.home article.single.summary {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #24313f;
+  border: 1px solid #3a4b5c;
   border-radius: 12px;
   padding: 20px 24px;
   margin-bottom: 18px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .page.home article.single.summary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.page.home article.single.summary .single-title a {
+  color: #d7e3ec;
+}
+
+.page.home article.single.summary .single-title a:hover {
+  color: #8fc1e8;
+}
+
+/* Tags */
+.tag {
+  background-color: #2e3d4d !important;
+  color: #8fc1e8 !important;
+}
+
+/* Footer */
+.footer {
+  color: #6f8299 !important;
 }
