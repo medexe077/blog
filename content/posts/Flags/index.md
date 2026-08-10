@@ -13,13 +13,13 @@
 Multi-layer stego challenge: Black straps hinting to a hiddent audio file →  Hidden audio URL inside a PNG via LSB → Zsteg reveals reversed WAV file → Hearing the audio guide towards SSTV → SSTV reveals a fake flag → spectrogram reveals a Pastebin link → locked paste opens with the fake flag as password → real flag.
 
 ## Overview
+![Original Artifact](pt.png)
 
 We are given a PNG image that looks like a simple decorative design. A closer look at the top-right corner reveals faint stripes — a classic hint pointing to a hidden audio file.
 
 ![](barcode.png)
 
 ## Step 1 — Basic Recon
-![Original Artifact](pt.png)
 
 Whenever I get an image in a CTF, I start with the usual toolkit:
 
@@ -60,7 +60,11 @@ Back to the audio file, the spectrogram revealed a Pastebin link embedded in the
 ![Patebin](pastebin.png)
 
 ## Step 4 — Password-Protected Pastebin
-For a sec i thought the flag is there, but the Pastebin is password protected, for 2 hours i tried many methods with both the original pic and audio file but nothing worked, 
+
+For a sec i thought the flag is there, but the Pastebin is password protected, for 2 hours i tried many methods with both the original pic and audio file but nothing worked..
+
+![](paspro.png)
+
 Wait a minute... Can the fake flag be the Pastebin's Password? The answer is yes, and here is the Flag..
 
 ![](flag.png)
