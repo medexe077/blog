@@ -13,7 +13,7 @@ theme = "LoveIt"
     link = "https://github.com/medexe077"
   [params.header]
     [params.header.title]
-      name = "fr0st Blog"
+      name = "fr0st"
   [params.home]
     rss = 10
     [params.home.profile]
@@ -28,7 +28,7 @@ theme = "LoveIt"
       paginate = 6
   [params.social]
     GitHub = "medexe077"
-    Linkedin = "Mohamed KHEDDARI"
+    Linkedin = "mohamedkheddari"
     Email = "mohamed_kheddari@etu.univ-blida.dz"
   [params.page]
     enable = true
