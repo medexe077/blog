@@ -1,7 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>CTF - Category - fr0st Blog</title><link>https://medexe077.github.io/blog/categories/ctf/</link><description>CTF - Category - fr0st Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://medexe077.github.io/blog/categories/ctf/" rel="self" type="application/rss+xml"/><item><title>Power Trip</title><link>https://medexe077.github.io/blog/posts/flags/</link><pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate><author>fr0st</author><guid>https://medexe077.github.io/blog/posts/flags/</guid><description><![CDATA[<p><strong>Category:</strong> Forensics<br>
-<strong>Difficulty:</strong> Medium - Hard
-<strong>CTF:</strong> Flags CTF 2026</p>
-<h2 id="tldr">TL;DR</h2>
-<p>Multi-layer stego challenge: hidden audio URL inside a PNG via LSB → reversed WAV file → spectrogram reveals a Pastebin link → locked paste opens with the fake flag as password → real flag.</p>
-<h2 id="overview">Overview</h2>
-<p>We are given a PNG image that looks like a simple decorative design. A closer look at the top-right corner reveals faint stripes — a classic hint pointing to a hidden audio file.</p>]]></description></item></channel></rss>
