@@ -7,12 +7,13 @@ theme = "LoveIt"
   version = "0.2.X"
   description = "My CTF writeups & security research"
   defaultTheme = "dark"
-
   [params.author]
     name = "fr0st"
     email = "mohamed_kheddari@etu.univ-blida.dz"
     link = "https://github.com/medexe077"
-
+  [params.header]
+    [params.header.title]
+      name = "fr0st Blog"
   [params.home]
     rss = 10
     [params.home.profile]
@@ -25,12 +26,10 @@ theme = "LoveIt"
     [params.home.posts]
       enable = true
       paginate = 6
-
   [params.social]
     GitHub = "medexe077"
     Linkedin = "Mohamed KHEDDARI"
     Email = "mohamed_kheddari@etu.univ-blida.dz"
-
   [params.page]
     enable = true
     [params.page.toc]
