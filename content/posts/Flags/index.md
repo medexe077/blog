@@ -1,8 +1,11 @@
 ---
 
 **Challenge**: "Power Trip"
+
 **Event**: Flags CTF
+
 **Category:** Forensics  
+
 **Difficulty:** Medium - Hard 
 
 ## TL;DR
