@@ -5,15 +5,15 @@ body {
   color: #d7e3ec !important;
 }
 
-/* Header */
-.header-desktop,
-.header-mobile {
+/* Header (confirmed selector: uses IDs, not classes) */
+#header-desktop,
+#header-mobile {
   background-color: #1b2530 !important;
   border-bottom: 1px solid #2e3d4d;
 }
 
-.header-desktop .logo,
-.header-mobile .logo {
+#header-desktop .logo,
+#header-mobile .logo {
   color: #8fc1e8 !important;
 }
 
@@ -28,7 +28,7 @@ a:hover {
   color: #b8dcf7;
 }
 
-/* Post cards on homepage */
+/* Post cards on homepage (confirmed working) */
 .page.home article.single.summary {
   background-color: #24313f;
   border: 1px solid #3a4b5c;
