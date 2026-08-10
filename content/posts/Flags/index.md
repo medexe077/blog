@@ -1,14 +1,12 @@
 ---
-title: "Power Trip"
-date: 2026-08-01
-tags: ["Steganography", "Forensics", "Audio", "SSTV"]
-categories: ["CTF"]
-draft: false
+Flags CTF 30/07 - 01/08 2026
+Chall: "Power Trip"
+Tags: ["Steganography", "Forensics", "Audio Analysis", "SSTV"]
+
 ---
 
 **Category:** Forensics  
 **Difficulty:** Medium - Hard 
-**CTF:** Flags CTF 2026
 
 ## TL;DR
 
