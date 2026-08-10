@@ -1,5 +1,5 @@
 ---
-                                                                  **Power Trip Writeup**
+
 **Challenge**: "Power Trip"
 **Event**: Flags CTF
 **Category:** Forensics  
