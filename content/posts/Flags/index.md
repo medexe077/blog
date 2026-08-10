@@ -1,6 +1,6 @@
 ---
 Title: "Power trip Writeup"
-Date: 01/08/2026
+Date: 2026-08-01
 ---
 
 Challenge: "Power Trip"
