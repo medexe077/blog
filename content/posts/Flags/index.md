@@ -1,13 +1,9 @@
 ---
-
-**Challenge:** Power Trip
-
-**Event:** Flags CTF
-
-**Category:** Forensics  
-
-**Difficulty:** Medium - Hard 
-
+Title: "Power Trip"
+Challenge: "Power Trip"
+Event: "Flags CTF"
+Category: "Forensics"
+Difficulty: "Medium - Hard"
 ---
 
 ## TL;DR
