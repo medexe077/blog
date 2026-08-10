@@ -49,7 +49,7 @@ I opened the WAV file in Audacity first as i usually do — nothing obvious. The
 
 ![Sonic Visualiser](specto.png)
 
-As well, when hearing the Audio several ideas came to my head (Morse code, ggwave...) but none of them worked, i tried **SSTV** using a SSTV decoding tool and it showed me a fake flag:
+When heard the Audio for the first time, several ideas came to my head (Morse code, ggwave...) but none of them worked, i tried **SSTV** using an SSTV decoding tool and it showed me a fake flag:
 
 ![](fake.png)
 
