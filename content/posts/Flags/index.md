@@ -16,7 +16,7 @@ Multi-layer stego challenge: Black straps hinting to a hiddent audio file →  H
 
 We are given a PNG image that looks like a simple decorative design. A closer look at the top-right corner reveals faint stripes — a classic hint pointing to a hidden audio file.
 
-[](barcode.png)
+![](barcode.png)
 
 ## Step 1 — Basic Recon
 ![Original Artifact](pt.png)
@@ -63,7 +63,7 @@ Back to the audio file, the spectrogram revealed a Pastebin link embedded in the
 For a sec i thought the flag is there, but the Pastebin is password protected, for 2 hours i tried many methods with both the original pic and audio file but nothing worked, 
 Wait a minute... Can the fake flag be the Pastebin's Password? The answer is yes, and here is the Flag..
 
-[](flag.png)
+![](flag.png)
 
 Flag: ITC{l4y3rs_m4k3_m3_h3ll4_d1zzy!}
 
