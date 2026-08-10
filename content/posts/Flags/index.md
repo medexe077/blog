@@ -8,6 +8,8 @@
 
 **Difficulty:** Medium - Hard 
 
+---
+
 ## TL;DR
 
 Multi-layer stego challenge: Black straps hinting to a hiddent audio file →  Hidden audio URL inside a PNG via LSB → Zsteg reveals reversed WAV file → Hearing the audio guide towards SSTV → SSTV reveals a fake flag → spectrogram reveals a Pastebin link → locked paste opens with the fake flag as password → real flag.
