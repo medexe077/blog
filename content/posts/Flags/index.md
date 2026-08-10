@@ -10,20 +10,21 @@
 
 ## TL;DR
 
-Multi-layer stego challenge: hidden audio URL inside a PNG via LSB → reversed WAV file → spectrogram reveals a Pastebin link → locked paste opens with the fake flag as password → real flag.
+Multi-layer stego challenge: Black straps hinting to a hiddent audio file →  Hidden audio URL inside a PNG via LSB → Zsteg reveals reversed WAV file → Hearing the audio guide towards SSTV → SSTV reveals a fake flag → spectrogram reveals a Pastebin link → locked paste opens with the fake flag as password → real flag.
 
 ## Overview
 
 We are given a PNG image that looks like a simple decorative design. A closer look at the top-right corner reveals faint stripes — a classic hint pointing to a hidden audio file.
 
 ## Step 1 — Basic Recon
+![Original Artifact](pt.png)
 
 Whenever I get an image in a CTF, I start with the usual toolkit:
 
 ```bash
-exiftool pt.png
-binwalk pt.png
-steghide extract -sf pt.png
+exiftool 
+binwalk 
+steghide extract -sf ...
 ```
 
 Nothing useful came out. Time to go deeper.
@@ -33,7 +34,8 @@ Nothing useful came out. Time to go deeper.
 ```bash
 zsteg -a pt.png
 ```
-Because of the black straps
+![outp](zsteg.png)
+
 After carefully reading through the output, one line caught my eye: 
   b8,r,lsb,Xy .. text: "vaw.cs5c9r/eom.xobtac.selif//:sptth
 
@@ -42,7 +44,8 @@ That string is a reversed URL. Reversing it gives a `.wav` audio file link.
 ## Step 3 — Audio Analysis
 
 I opened the WAV file in Audacity first as i usually do — nothing obvious. Then switched to **Sonic Visualiser** you can download it from here : https://www.sonicvisualiser.org/download.html and added a spectrogram layer via **Layer → Add Spectrogram**.
-As well, when hearing the Audio several hints came to my head (Morse code, ggwave...) but none of them worked, i tried **SSTV** using a SSTV decoding tool and it showed me a fake flag,
+
+As well, when hearing the Audio several ideas came to my head (Morse code, ggwave...) but none of them worked, i tried **SSTV** using a SSTV decoding tool and it showed me a fake flag,
 
 I ignored it completely because its a classic Forensics challs troll, but let just not forget about it, we need it in a minute.
 
