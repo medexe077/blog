@@ -22,9 +22,23 @@ theme = "LoveIt"
       subtitle = "CTF writeups & security research"
       typeit = false
       social = true
+    [params.home.posts]
+      enable = true
+      paginate = 6
 
   [params.social]
     GitHub = "medexe077"
+    Linkedin = "Mohamed KHEDDARI"
+    Email = "mohamed_kheddari@etu.univ-blida.dz"
+
+  [params.page]
+    enable = true
+    [params.page.toc]
+      enable = true
+    [params.page.code]
+      copy = true
+    [params.page.share]
+      enable = false
 
 [menu]
   [[menu.main]]
