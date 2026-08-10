@@ -1,5 +1,5 @@
 ---
-Title: "Power trip Writeup"
+Title: "Flags CTF - Forensics/Power trip chall"
 Date: 2026-08-01
 ---
 
