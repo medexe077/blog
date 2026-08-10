@@ -16,6 +16,8 @@ Multi-layer stego challenge: Black straps hinting to a hiddent audio file →  H
 
 We are given a PNG image that looks like a simple decorative design. A closer look at the top-right corner reveals faint stripes — a classic hint pointing to a hidden audio file.
 
+[](barcode.png)
+
 ## Step 1 — Basic Recon
 ![Original Artifact](pt.png)
 
@@ -45,16 +47,23 @@ That string is a reversed URL. Reversing it gives a `.wav` audio file link.
 
 I opened the WAV file in Audacity first as i usually do — nothing obvious. Then switched to **Sonic Visualiser** you can download it from here : https://www.sonicvisualiser.org/download.html and added a spectrogram layer via **Layer → Add Spectrogram**.
 
-As well, when hearing the Audio several ideas came to my head (Morse code, ggwave...) but none of them worked, i tried **SSTV** using a SSTV decoding tool and it showed me a fake flag,
+![Sonic Visualiser](specto.png)
+
+As well, when hearing the Audio several ideas came to my head (Morse code, ggwave...) but none of them worked, i tried **SSTV** using a SSTV decoding tool and it showed me a fake flag:
+
+![](fake.png)
 
 I ignored it completely because its a classic Forensics challs troll, but let just not forget about it, we need it in a minute.
 
 Back to the audio file, the spectrogram revealed a Pastebin link embedded in the frequency domain.
 
+![](patebin.png)
+
 ## Step 4 — Password-Protected Pastebin
 For a sec i thought the flag is there, but the Pastebin is password protected, for 2 hours i tried many methods with both the original pic and audio file but nothing worked, 
 Wait a minute... Can the fake flag be the Pastebin's Password? The answer is yes, and here is the Flag..
 
+[](flag.png)
 
 Flag: ITC{l4y3rs_m4k3_m3_h3ll4_d1zzy!}
 
