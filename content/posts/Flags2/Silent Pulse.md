@@ -1,15 +1,15 @@
 ---
-Title: "ITC CTF 2026 - Silent Pulse"
+Title: "Flags CTF - Silent Pulse"
 Date: 2026-07-30
 ---
 
 Challenge: "Silent Pulse"
-Event: "ITC CTF 2026"
+Event: "Flags CTF 2026"
 Category: "Network Forensics"
 Difficulty: "Medium"
 
 ## TL;DR
-A finance-VLAN pcap with 452 packets. One workstation stands out from all the background noise, beacons every 30s to a fake "CDN" domain, gets tasked with recon + file-staging commands over HTTP, then exfiltrates a stolen file XOR'd with a key that's smuggled out through a DNS TXT record.
+A finance-VLAN pcap with 452 packets. One workstation stands out from all the background noise, beacons every 30s to a fake "CDN" domain, gets tasked with recon + file-staging commands over HTTP, then exfiltrates a stolen file XOR'ed with a key that's smuggled out through a DNS TXT record.
 
 ## Overview
 We're handed `silent_pulse.pcap` — ~7 minutes of traffic from a finance VLAN. Mixed in with the usual ARP/ICMP/DNS/mDNS/NTP noise, one host is doing something it shouldn't.
@@ -25,7 +25,7 @@ Whenever I get a pcap, first stop is always **Statistics → Conversations → I
 10.10.20.15
 ```
 
-Filtered on it:
+Filtered based on it:
 
 ```
 ip.addr == 10.10.20.15
