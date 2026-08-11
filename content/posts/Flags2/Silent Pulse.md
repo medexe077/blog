@@ -105,7 +105,7 @@ cmd /c type C:\Finance\Quarterly\merger_notes.txt > %TEMP%\cache.dat
 ```
 
 ## Step 5 — Finding the exfiltrated file
-![Upload POST showing hostname and data fields](hostname___data.jpg)
+![Upload POST showing hostname and data fields](hostnamedata.jpg)
 ![Follow HTTP Stream of the upload with merger_notes.txt](merger.jpg)
 
 Filtered for the upload leg instead of the pulse beacons:
@@ -124,7 +124,6 @@ One request stood out — `POST /api/v1/upload` instead of `/pulse`. Followed th
 
 ## Step 6 — Decoding the stolen file and grabbing the flag
 ![DNS TXT record with the rotation= key](rota.jpg)
-![Decoding the hex key to NOCTURNE](nocturne.jpg)
 
 The `data` field is `base64+xor-repeating` — base64 was easy, but I needed the XOR key. Went digging back through the DNS traffic:
 
@@ -144,6 +143,7 @@ Decoded the hex:
 echo 4E4F435455524E45 | xxd -r -p
 NOCTURNE
 ```
+![](nocturne.jpg)
 
 That's the XOR key. Grabbed the `data` field from the upload POST and ran it through a quick script:
 
