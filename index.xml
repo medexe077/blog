@@ -3,7 +3,7 @@
 <p>Category: &ldquo;Forensics&rdquo;</p>
 <p>Difficulty: &ldquo;Medium - Hard&rdquo;</p>
 <h2 id="tldr">TL;DR</h2>
-<p>Multi-layer stego challenge: Black straps hinting to a hiddent audio file →  Hidden audio URL inside a PNG via LSB → Zsteg reveals reversed WAV file → Hearing the audio guide towards SSTV → SSTV reveals a fake flag → spectrogram reveals a Pastebin link → locked paste opens with the fake flag as password → real flag.</p>]]></description></item><item><title>Flags CTF - Silent Pulse</title><link>https://medexe077.github.io/blog/posts/flags2/silent-pulse/</link><pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate><author>mohamed_kheddari@etu.univ-blida.dz (fr0st)</author><guid>https://medexe077.github.io/blog/posts/flags2/silent-pulse/</guid><description><![CDATA[<p>Challenge: &ldquo;Silent Pulse&rdquo;
+<p>Multi-layer stego challenge: Black straps hinting to a hiddent audio file →  Hidden audio URL inside a PNG via LSB → Zsteg reveals reversed WAV file → Hearing the audio guide towards SSTV → SSTV reveals a fake flag → spectrogram reveals a Pastebin link → locked paste opens with the fake flag as password → real flag.</p>]]></description></item><item><title>Flags CTF - Forensics/ Silent Pulse</title><link>https://medexe077.github.io/blog/posts/flags2/silent-pulse/</link><pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate><author>mohamed_kheddari@etu.univ-blida.dz (fr0st)</author><guid>https://medexe077.github.io/blog/posts/flags2/silent-pulse/</guid><description><![CDATA[<p>Challenge: &ldquo;Silent Pulse&rdquo;
 Event: &ldquo;Flags CTF 2026&rdquo;
 Category: &ldquo;Network Forensics&rdquo;
 Difficulty: &ldquo;Medium&rdquo;</p>
