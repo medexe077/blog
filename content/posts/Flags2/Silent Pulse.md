@@ -1,5 +1,5 @@
 ---
-Title: "Flags CTF - Silent Pulse"
+Title: "Flags CTF - Forensics/ Silent Pulse"
 Date: 2026-07-30
 ---
 
