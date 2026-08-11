@@ -37,7 +37,7 @@ Followed one of the repeated POST streams and the JSON body gives up the hostnam
 {"host":"WS-FIN-07","user":"alice","seq":1,"status":"ready"}
 ```
 
-**IP:** `10.10.20.15` — **Hostname:** `WS-FIN-07`
+**IP:** `10.10.20.15` — **Hostname:** `WS-FIN-07`✅
 
 ## Step 2 — C2 domain and IP
 Same HTTP stream from Step 1 has the `Host:` header sitting right at the top:
@@ -54,7 +54,7 @@ dns.qry.name == "updates-cdn.example"
 
 DNS response points to `198.51.100.77`.
 
-**C2 domain:** `updates-cdn.example` — **C2 IP/port:** `198.51.100.77:8080`
+**C2 domain:** `updates-cdn.example` — **C2 IP/port:** `198.51.100.77:8080`✅
 
 ## Step 3 — Beacon interval
 ![Beacon requests spaced 30s apart](30sec.jpg)
@@ -76,7 +76,7 @@ Then just did the math on the Time column, subtracting each frame from the one b
 
 Every single request lands exactly 30s after the last one — textbook fixed-interval beacon.
 
-**Beacon interval:** `30 seconds`
+**Beacon interval:** `30 seconds`✅
 
 ## Step 4 — Decoding the C2 commands
 ![Decoding each command with base64 -d](base64-d.jpg)
@@ -101,7 +101,7 @@ And a 4th one staging the target file into a temp cache — classic recon → di
 whoami /all
 ipconfig /all
 powershell -NoProfile -Command "Get-ChildItem C:\Finance\Quarterly"
-cmd /c type C:\Finance\Quarterly\merger_notes.txt > %TEMP%\cache.dat
+cmd /c type C:\Finance\Quarterly\merger_notes.txt > %TEMP%\cache.dat✅
 ```
 
 ## Step 5 — Finding the exfiltrated file
@@ -120,7 +120,7 @@ One request stood out — `POST /api/v1/upload` instead of `/pulse`. Followed th
 {"host":"WS-FIN-07","file":"merger_notes.txt","encoding":"base64+xor-repeating","data":"AAARAB0BGgQcbw8bEhsdEQcM..."}
 ```
 
-**Exfiltrated file:** `merger_notes.txt`
+**Exfiltrated file:** `merger_notes.txt`✅
 
 ## Step 6 — Decoding the stolen file and grabbing the flag
 ![DNS TXT record with the rotation= key](rota.jpg)
@@ -165,9 +165,9 @@ NORTHSTAR LOGISTICS - INTERNAL
 Project: Harbor acquisition
 Meeting location: Dock 9 records office
 This is synthetic CTF evidence.
-FLAG: itc{silent_pulse_http_c2_exfil}
+FLAG: itc{silent_pulse_http_c2_exfil}✅
 ```
-
+ Now that we found all 6 Answers the final flag should be ready:
 ## Flag: `itc{10.10.20.15_WS-FIN-07_updates-cdn.example_198.51.100.77:8080_30s_NOCTURNE_merger_notes.txt_itc{silent_pulse_http_c2_exfil}}`
 
 
@@ -176,5 +176,4 @@ FLAG: itc{silent_pulse_http_c2_exfil}
 2. Malware beacons every 30s to `updates-cdn.example` (`198.51.100.77:8080`) via `POST /api/v1/pulse`.
 3. C2 tasks it with recon (`whoami`, `ipconfig`) → discovery (`Finance\Quarterly`) → staging (`merger_notes.txt` → `cache.dat`).
 4. Staged file exfiltrated via `POST /api/v1/upload`, base64 + repeating-key XOR.
-5. XOR key (`NOCTURNE`) smuggled out via a DNS TXT record as hex — DNS-based key delivery.
-6. Decoding the stolen file reveals the final piece, which gets wrapped with the other five answers to form the full submission flag.
+5. XOR key (`NOCTURNE`) smuggled out via a DNS TXT record as hex
