@@ -69,7 +69,7 @@ Then just did the math on the Time column, subtracting each frame from the one b
 
 ```
 278.104 - 248.104 = 30
-308.104 - 278.104 = 30
+308.104 - 278.104 = 30... and so on
 ```
 
 ![Beacon requests spaced 30s apart](30sec.jpg)
