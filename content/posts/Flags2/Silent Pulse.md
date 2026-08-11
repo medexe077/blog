@@ -57,6 +57,8 @@ DNS response points to `198.51.100.77`.
 **C2 domain:** `updates-cdn.example` — **C2 IP/port:** `198.51.100.77:8080`
 
 ## Step 3 — Beacon interval
+![Beacon requests spaced 30s apart](30sec.jpg)
+
 Filtered the C2 traffic:
 
 ```
@@ -70,11 +72,15 @@ Then just did the math on the Time column, subtracting each frame from the one b
 308.104 - 278.104 = 30
 ```
 
+![Beacon requests spaced 30s apart](30sec.jpg)
+
 Every single request lands exactly 30s after the last one — textbook fixed-interval beacon.
 
 **Beacon interval:** `30 seconds`
 
 ## Step 4 — Decoding the C2 commands
+![Decoding each command with base64 -d](base64-d.jpg)
+
 Same filter, followed each HTTP stream, and the server's replies carry a base64 `command` field. Decoded each one straight in terminal:
 
 ```bash
@@ -99,6 +105,9 @@ cmd /c type C:\Finance\Quarterly\merger_notes.txt > %TEMP%\cache.dat
 ```
 
 ## Step 5 — Finding the exfiltrated file
+![Upload POST showing hostname and data fields](hostname___data.jpg)
+![Follow HTTP Stream of the upload with merger_notes.txt](merger.jpg)
+
 Filtered for the upload leg instead of the pulse beacons:
 
 ```
@@ -114,6 +123,9 @@ One request stood out — `POST /api/v1/upload` instead of `/pulse`. Followed th
 **Exfiltrated file:** `merger_notes.txt`
 
 ## Step 6 — Decoding the stolen file and grabbing the flag
+![DNS TXT record with the rotation= key](rota.jpg)
+![Decoding the hex key to NOCTURNE](nocturne.jpg)
+
 The `data` field is `base64+xor-repeating` — base64 was easy, but I needed the XOR key. Went digging back through the DNS traffic:
 
 ```
@@ -157,6 +169,7 @@ FLAG: itc{silent_pulse_http_c2_exfil}
 ```
 
 ## Flag: `itc{10.10.20.15_WS-FIN-07_updates-cdn.example_198.51.100.77:8080_30s_NOCTURNE_merger_notes.txt_itc{silent_pulse_http_c2_exfil}}`
+
 
 ## Summary of the attack chain
 1. `WS-FIN-07` (`10.10.20.15`, user `alice`) grabs a payload disguised as a PDF.
