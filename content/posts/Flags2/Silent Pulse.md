@@ -15,7 +15,7 @@ A finance-VLAN pcap with 452 packets. One workstation stands out from all the ba
 We're handed `silent_pulse.pcap` — ~7 minutes of traffic from a finance VLAN. Mixed in with the usual ARP/ICMP/DNS/mDNS/NTP noise, one host is doing something it shouldn't.
 
 ```
-Flag format: itc{...}
+Flag format: itc{q1_q2_q3_q4_q5_q6} i processed each question as a step, so the final flag is the concatenation of each step's answer.
 ```
 
 ## Step 1 — Finding the infected host
