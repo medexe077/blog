@@ -167,8 +167,10 @@ Meeting location: Dock 9 records office
 This is synthetic CTF evidence.
 FLAG: itc{silent_pulse_http_c2_exfil}✅
 ```
+
  Now that i found all 6 Answers the final flag should be ready:
-## Flag: `itc{10.10.20.15_WS-FIN-07_updates-cdn.example_198.51.100.77:8080_30s_NOCTURNE_merger_notes.txt_itc{silent_pulse_http_c2_exfil}}`
+ 
+## Flag:   `itc{10.10.20.15_WS-FIN-07_updates-cdn.example_198.51.100.77:8080_30s_NOCTURNE_merger_notes.txt_itc{silent_pulse_http_c2_exfil}}`
 
 
 ## Summary of the attack chain
