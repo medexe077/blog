@@ -1,5 +1,5 @@
 ---
-Title: "Flags CTF - Forensics/Power trip chall"
+Title: "Flags CTF - Forensics/Power trip"
 Date: 2026-08-01
 ---
 
